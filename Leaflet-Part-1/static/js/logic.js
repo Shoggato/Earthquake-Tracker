@@ -69,7 +69,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geo
         quakeCount.earthQuake++;
 
         // popup some info from each quake shall we :3
-        circle.bindPopup("magnitude: " + quakeMag + "<br>Depth: " + quakeDepth + " km")
+        circle.bindPopup("magnitude: " + quakeMag + "<br>Depth: " + quakeDepth + " km" + "<br>Lat/Long: "+ quakeLat + ' / ' + quakeLong)
     });
 
     updateLegend(new Date().getTime(), quakeCount);
