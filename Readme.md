@@ -14,7 +14,7 @@ Part 2: Gather and Plot More Data (Optional with no extra points earning)
 ONLY IF I CAN FIND TIME TO WORK ON THIS.
 
 # Part 1: Create the Earthquake Visualization
-![Image of Part 1](<Images/world_view>)<br>
+![Image of Part 1](<Images/world_view.png>)<br>
 Import and visualize the data by doing the following:
 
 Using Leaflet, create a map that plots all the earthquakes from your dataset based on their longitude and latitude.
