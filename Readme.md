@@ -1,5 +1,5 @@
 Module 15 Challenge<br>
-![Intro Image](images/1-Logo.png)<br>
+![Intro Image](Images/1-Logo.png)<br>
 # Background
 The United States Geological Survey, or USGS for short, is responsible for providing scientific data about natural hazards, the health of our ecosystems and environment, and the impacts of climate and land-use change. Their scientists develop new methods and tools to supply timely, relevant, and useful information about the Earth and its processes.
 
@@ -14,7 +14,7 @@ Part 2: Gather and Plot More Data (Optional with no extra points earning)
 ONLY IF I CAN FIND TIME TO WORK ON THIS.
 
 # Part 1: Create the Earthquake Visualization
-![Image of Part 1](<images/world_view>)
+![Image of Part 1](<Images/world_view>)<br>
 Import and visualize the data by doing the following:
 
 Using Leaflet, create a map that plots all the earthquakes from your dataset based on their longitude and latitude.
