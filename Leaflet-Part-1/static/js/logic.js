@@ -86,9 +86,15 @@ function getColor(depth) {
 };
 
 // Update the legend's innerHTML with the last updated time and station count.
-function updateLegend(time, stationCount) {
+function updateLegend(time) {
     document.querySelector(".legend").innerHTML = [
-      "<p>Updated: " + moment.unix(time).format("h:mm:ss A") + "</p>",
-      "<p class='Color Shade: " + stationCount.earthQuake + "</p>",
+        "<p>Updated: " + moment.unix(time).format("h:mm:ss A") + "</p>",
+        "<p>Depth Legend:</p>",
+        "<div class='legend-item'><div class='legend-color' style='background:" + colorScale(10).hex() + "'></div> -10-10 km</div>",
+        "<div class='legend-item'><div class='legend-color' style='background:" + colorScale(30).hex() + "'></div> 10-30 km</div>",
+        "<div class='legend-item'><div class='legend-color' style='background:" + colorScale(50).hex() + "'></div> 30-50 km</div>",
+        "<div class='legend-item'><div class='legend-color' style='background:" + colorScale(70).hex() + "'></div> 50-70 km</div>",
+        "<div class='legend-item'><div class='legend-color' style='background:" + colorScale(90).hex() + "'></div> 70-90 km</div>",
+        "<div class='legend-item'><div class='legend-color' style='background:" + colorScale(100).hex() + "'></div> 90+ km</div>",
     ].join("");
 };
