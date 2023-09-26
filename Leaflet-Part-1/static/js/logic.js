@@ -8,9 +8,9 @@ let layers = {
 };
 
 // Create the map with our layers.
-let map = L.map("map-id", {
+let map = L.map("map", {
     center: [37.0902, -95.7129],
-    zoom: 15,
+    zoom: 19,
     layers: [
       layers.earthQuake
     ]
@@ -40,14 +40,15 @@ info.onAdd = function() {
 // Add the info legend to the map.
 info.addTo(map);
 
+// initialize quake counts at zero
+let quakeCount = {
+    earthQuake: 0,
+};
+
+
 // Perform an API call to the USGS GeoJSON information endpoint.
 d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson").then(function(data) {
     let quakes = data.features;
-
-    // initialize quake counts at zero
-    let quakeCount = {
-        earthQuake: 0,
-    };
 
     // loop through the earthquake data and create markers
     quakes.forEach(function(quake){
@@ -65,7 +66,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_m
         }).addTo(layers.earthQuake);
 
         // update the station count for the function
-        stationCount.earthQuake++;
+        quakeCount.earthQuake++;
 
         // popup some info from each quake shall we :3
         circle.bindPopup("magnitude: " + quakeMag + "<br>Depth: " + quakeDepth + " km")
@@ -73,9 +74,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_m
 
     updateLegend(new Date().getTime(), quakeCount);
 
-};
-// Chroma.js lib for color gradient
-const chroma = require('chroma-js');
+});
 
 // color scale for depth gradient
 const colorScale = chroma.scale(['#8AFB28', '#0E9C19']).domain([0, 100]);
