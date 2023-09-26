@@ -10,7 +10,7 @@ let layers = {
 // Create the map with our layers.
 let map = L.map("map", {
     center: [37.0902, -95.7129],
-    zoom: 19,
+    zoom: 5,
     layers: [
       layers.earthQuake
     ]
@@ -47,7 +47,7 @@ let quakeCount = {
 
 
 // Perform an API call to the USGS GeoJSON information endpoint.
-d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson").then(function(data) {
+d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson").then(function(data) {
     let quakes = data.features;
 
     // loop through the earthquake data and create markers
@@ -62,7 +62,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_m
             color: getColor(quakeDepth),
             fillColor: getColor(quakeDepth),
             fillOpacity: 0.6,
-            radius: quakeMag * 1000 // *1000 is a radius scaling factor
+            radius: quakeMag * 10000 // *1000 is a radius scaling factor
         }).addTo(layers.earthQuake);
 
         // update the station count for the function
