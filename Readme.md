@@ -41,29 +41,29 @@ Before you begin, ensure you have the following tools installed:
 
 1. Clone the repository:
 
-   \`\`\`bash
+   ```bash
    git clone https://github.com/your-username/earthquake-tracker.git
-   \`\`\`
+   ```
 
 2. Navigate to the project directory:
 
-   \`\`\`bash
+   ```bash
    cd earthquake-tracker
-   \`\`\`
+   ```
 
 3. Install dependencies:
 
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 ## Usage
 
 1. Start the development server:
 
-   \`\`\`bash
+   ```bash
    npm start
-   \`\`\`
+   ```
 
 2. Open your web browser and go to [http://localhost:your-port](http://localhost:your-port).
 
