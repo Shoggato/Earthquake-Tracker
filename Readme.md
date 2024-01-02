@@ -51,21 +51,7 @@ Before you begin, ensure you have the following tools installed:
    cd earthquake-tracker
    ```
 
-3. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-## Usage
-
-1. Start the development server:
-
-   ```bash
-   npm start
-   ```
-
-2. Open your web browser and go to [http://localhost:your-port](http://localhost:your-port).
+2. Open your web browser and go to [http://localhost:your-port].
 
 3. Explore the interactive earthquake map!
 
