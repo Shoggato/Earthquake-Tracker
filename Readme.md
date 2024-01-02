@@ -1,28 +1,93 @@
-Module 15 Challenge<br>
 ![Intro Image](Images/1-Logo.png)<br>
-# Background
-The United States Geological Survey, or USGS for short, is responsible for providing scientific data about natural hazards, the health of our ecosystems and environment, and the impacts of climate and land-use change. Their scientists develop new methods and tools to supply timely, relevant, and useful information about the Earth and its processes.
+echo "# Earthquake-Tracker
 
-The USGS is interested in building a new set of tools that will allow them to visualize their earthquake data. They collect a massive amount of data from all over the world each day, but they lack a meaningful way of displaying it. In this challenge, you have been tasked with developing a way to visualize USGS data that will allow them to better educate the public and other government organizations (and hopefully secure more funding) on issues facing our planet.
+An interactive web application that visualizes earthquake data on a Leaflet map. The application fetches earthquake data from the USGS GeoJSON API and displays it with interactive features such as color-coded markers, pop-up information, and a legend indicating earthquake depth.
 
-# Instructions
-The instructions for this activity are broken into two parts:
+## Table of Contents
 
-Part 1: Create the Earthquake Visualization
+- [Demo](#demo)
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Built With](#built-with)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
-Part 2: Gather and Plot More Data (Optional with no extra points earning) 
-ONLY IF I CAN FIND TIME TO WORK ON THIS.
+## Example
 
-# Part 1: Create the Earthquake Visualization
-![Image of Part 1](<Images/world_view.png>)<br>
-Import and visualize the data by doing the following:
+![Earthquake Tracker Demo](<Images/world_view.png>)
 
-Using Leaflet, create a map that plots all the earthquakes from your dataset based on their longitude and latitude.
+## Features
 
-Your data markers should reflect the magnitude of the earthquake by their size and the depth of the earthquake by color. Earthquakes with higher magnitudes should appear larger, and earthquakes with greater depth should appear darker in color.
+- Interactive Leaflet map displaying earthquake data.
+- Color-coded markers based on earthquake depth.
+- Pop-up information for each earthquake.
+- Legend indicating depth ranges.
+- Responsive and user-friendly design.
 
-Hint: The depth of the earth can be found as the third coordinate for each earthquake.
+## Getting Started
 
-Include popups that provide additional information about the earthquake when its associated marker is clicked.
+### Prerequisites
 
-Create a legend that will provide context for your map data.
+Before you begin, ensure you have the following tools installed:
+
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+
+### Installation
+
+1. Clone the repository:
+
+   \`\`\`bash
+   git clone https://github.com/your-username/earthquake-tracker.git
+   \`\`\`
+
+2. Navigate to the project directory:
+
+   \`\`\`bash
+   cd earthquake-tracker
+   \`\`\`
+
+3. Install dependencies:
+
+   \`\`\`bash
+   npm install
+   \`\`\`
+
+## Usage
+
+1. Start the development server:
+
+   \`\`\`bash
+   npm start
+   \`\`\`
+
+2. Open your web browser and go to [http://localhost:your-port](http://localhost:your-port).
+
+3. Explore the interactive earthquake map!
+
+## Built With
+
+- [Leaflet](https://leafletjs.com/) - JavaScript library for interactive maps.
+- [D3.js](https://d3js.org/) - JavaScript library for data visualization.
+- [Chroma](https://gka.github.io/chroma.js/) - Color scale library.
+- [Moment.js](https://momentjs.com/) - JavaScript library for handling dates and times.
+
+## Contributing
+
+Contributions are welcome! Please follow the [Contributing Guidelines](CONTRIBUTING.md).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Author
+Erika Walker
+
+## Acknowledgments
+
+- Hat tip to [USGS](https://earthquake.usgs.gov/) for providing earthquake data.
+- Inspiration from other earthquake visualization projects." > README.md
