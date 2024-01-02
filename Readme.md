@@ -5,7 +5,7 @@ An interactive web application that visualizes earthquake data on a Leaflet map.
 
 ## Table of Contents
 
-- [Demo](#demo)
+- [Example](#Example)
 - [Features](#features)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
